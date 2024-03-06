@@ -16,9 +16,9 @@ const reportWebVitals = async (onPerfEntry?: ReportHandler): Promise<void> => {
       getFCP(onPerfEntry)
       getLCP(onPerfEntry)
       getTTFB(onPerfEntry)
-    } catch (error) {
-      // Handle import or other errors if needed
-      console.error('Error importing web-vitals:', error)
+    } catch {
+      // Error importing web-vitals
+      // Web Vitals reporting will not work correctly.
     }
   }
 }
